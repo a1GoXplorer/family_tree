@@ -4,7 +4,7 @@ require_relative '../grandparent'
 describe Grandparent do
 
   before(:context) do
-    @grandparent = Grandparent.new("marcia",60,"female")
+    @grandparent = Grandparent.new("name","age","gender")
   end
 
   describe "Initialization" do
@@ -12,12 +12,14 @@ describe Grandparent do
       expect(@grandparent).to be_an_instance_of Grandparent
     end
     it "is assigned a name" do
-
+      expect(@grandparent.name).to eq "name"
     end
     it "is assigned an age" do
+      expect(@grandparent.age).to eq "age"
 
     end
     it "is assigned a gender" do
+      expect(@grandparent.gender).to eq "gender"
 
     end
   end

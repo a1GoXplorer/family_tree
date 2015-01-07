@@ -9,6 +9,18 @@ class Grandparent
         @gender = gender
     end
 
+    def name
+    	@name
+    end
+
+    def age
+    	@age
+    end
+
+    def gender
+    	@gender
+    end
+
     
 end
 
