@@ -9,7 +9,7 @@ describe Grandparent do
 
   describe "Initialization" do
     it "is an instance of the Grandparent class" do
-
+      expect(@grandparent).to be_an_instance_of Grandparent
     end
     it "is assigned a name" do
 
